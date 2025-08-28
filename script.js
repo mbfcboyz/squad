@@ -80,7 +80,7 @@ function openModal(id) {
     if (!m) return;
     bigAvatar.src = m.img; bigAvatar.alt = m.name;
     fullName.innerHTML = `${m.name} ${categoryIcon(m.category)}`;
-    bio.textContent = m.bio;
+    bio.innerHTML = m.bio;
     meta.innerHTML = m.tags.map(t => `<span>${t}</span>`).join('');
     role.innerHTML = `<span>${m.role}</span>`;
 
@@ -119,4 +119,5 @@ window.addEventListener('load', () => {
         const found = MEMBERS.find(m => m.id === id);
         if (found) openModal(id);
     }
+
 });
