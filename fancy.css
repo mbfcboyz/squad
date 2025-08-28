@@ -1,1 +1,180 @@
+/* Filled tags */
+:root {
+    --base-color: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
 
+h2 {
+    display: inline-block;
+    margin-block: 1rem 0.5rem;
+    border-bottom: 2px solid var(--accent-clr);
+}
+
+.hash {
+    background: #222533;
+    border-radius: 6px;
+    padding: 0.01em 0.5em;
+    font-weight: 600;
+    color: #5e63ff;
+}
+
+.vanish {
+    background: none;
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.inverse {
+    background: #e6e6ef;
+    color: #11121a;
+    padding: 0.01em 0.4em;
+    border-radius: 4px;
+}
+
+.shadow-box {
+    background: #1c1c27;
+    padding: 0 0.6em;
+    border-radius: 8px;
+    box-shadow: 0 0 6px #000;
+}
+
+/* Chips */
+.chip-good {
+    background: #1f4d2e;
+    color: #8ff5b2;
+    padding: 0.01em 0.6em;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.chip-warn {
+    background: #4d3c1f;
+    color: #f5d48f;
+    padding: 0.01em 0.6em;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.chip-bad {
+    background: #4d1f1f;
+    color: #f58f8f;
+    padding: 0.01em 0.6em;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.badge {
+    background: #2a2a40;
+    border-radius: 12px;
+    padding: 0.1em 0.5em;
+    font-size: 0.8em;
+    color: #5e63ff;
+}
+
+/* Borders */
+.transparent-border {
+    border: 1px solid #5e63ff80;
+    padding: 0.01em 0.4em;
+    border-radius: 6px;
+}
+
+.offset {
+    border: 1px solid #888;
+    box-shadow: 2px 2px 0 #5e63ff;
+    padding: 0.01em 0.4em;
+}
+
+.dashed-box {
+    border: 2px dashed #5e63ff;
+    padding: 0.01em 0.6em;
+    border-radius: 6px;
+}
+
+.double {
+    border: 3px double #5e63ff;
+    padding: 0.01em 0.6em;
+    border-radius: 8px;
+}
+
+/* Text-only */
+.gradient {
+    background: linear-gradient(90deg, #5e63ff, #ff6, #f0f);
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.outline {
+    color: transparent;
+    -webkit-text-stroke: 1px #e6e6ef;
+}
+
+.glow {
+    text-shadow: 0 0 8px #5e63ff;
+}
+
+.marker {
+    background: #444;
+    padding: 0 0.2em;
+}
+
+/* Underlines */
+.underline {
+    text-decoration: underline;
+}
+
+.wavy {
+    text-decoration: underline wavy #5e63ff;
+}
+
+.dotted {
+    text-decoration: underline dotted #aaa;
+}
+
+.underline-strong {
+    border-bottom: 3px solid #5e63ff;
+}
+
+/* Typographic tweaks */
+.caps {
+    text-transform: uppercase;
+}
+
+.smallcaps {
+    font-variant: small-caps;
+}
+
+.mono {
+    font-family: monospace;
+}
+
+.dim {
+    opacity: 0.6;
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* Styled <br> and <hr> */
+br.soft {
+    display: block;
+    margin: 1em 0;
+    content: "";
+}
+
+hr.fancy {
+    border: none;
+    border-top: 2px dashed #5e63ff;
+    margin: 2rem 0;
+    opacity: 0.5;
+}
