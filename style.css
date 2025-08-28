@@ -276,6 +276,7 @@
             grid-template-columns: 1.1fr .9fr;
             gap: 1.4rem;
             align-items: center;
+                text-align: justify;
         }
 
         .about img {
@@ -505,4 +506,5 @@
             }
 
             /* back to base */
+
         }
